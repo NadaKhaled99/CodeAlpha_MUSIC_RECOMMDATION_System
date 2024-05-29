@@ -21,6 +21,15 @@ Simplified Poster Handling: Added a check to display a placeholder text if a pos
 #music_dict = pickle.load(open('music_rec.pkl', 'rb'))
 #music_df = pd.DataFrame(music_dict)
 #similarity_matrix = pickle.load(open('similarity_matrix.pkl', 'rb'))
+import os
+
+# Assuming the file is in the same directory as your app.py
+current_dir = os.path.dirname(__file__)
+file_path = os.path.join(current_dir, 'music_rec.pkl')
+
+# Open the file
+with open(file_path, 'rb') as f:
+    music_dict = pickle.load(f)
 
 # Fetch poster for a given music title
 #Key Parts of the Code
