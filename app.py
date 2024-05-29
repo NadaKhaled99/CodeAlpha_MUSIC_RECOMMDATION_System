@@ -18,9 +18,9 @@ Return None on Error: If fetching a poster fails, return None and handle it in t
 Simplified Poster Handling: Added a check to display a placeholder text if a poster is not available.
 '''
 # Load music data and similarity matrix
-music_dict = pickle.load(open('music_rec.pkl', 'rb'))
-music_df = pd.DataFrame(music_dict)
-similarity_matrix = pickle.load(open('similarity_matrix.pkl', 'rb'))
+#music_dict = pickle.load(open('music_rec.pkl', 'rb'))
+#music_df = pd.DataFrame(music_dict)
+#similarity_matrix = pickle.load(open('similarity_matrix.pkl', 'rb'))
 
 # Fetch poster for a given music title
 #Key Parts of the Code
