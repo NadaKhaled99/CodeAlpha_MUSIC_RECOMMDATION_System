@@ -23,11 +23,15 @@ Simplified Poster Handling: Added a check to display a placeholder text if a pos
 #similarity_matrix = pickle.load(open('similarity_matrix.pkl', 'rb'))
 
 # Assuming 'file_path' contains the correct path to your file
-with open("CodeAlpha_MUSIC_RECOMMDATION_System/DataSet/TrainData/ex.csv", 'rb') as f:
+#with open("CodeAlpha_MUSIC_RECOMMDATION_System/DataSet/TrainData/ex.csv", 'rb') as f:
     # Process the file contents using f here
     # For example:
 #   music_dict = pickle.load(f)
-
+with open("CodeAlpha_MUSIC_RECOMMDATION_System/DataSet/TrainData/ex.csv", 'rb') as f:
+    # This entire block is indented one level
+    # Code to process the file contents using f goes here
+    # For example:
+    data = f.read()
 # Fetch poster for a given music title
 #Key Parts of the Code
 #1. Fetching the Poster
