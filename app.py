@@ -23,10 +23,18 @@ Simplified Poster Handling: Added a check to display a placeholder text if a pos
 #similarity_matrix = pickle.load(open('similarity_matrix.pkl', 'rb'))
 
 # Assuming 'file_path' contains the correct path to your file
-with open(r"C:\content\drive\MyDrive\SpotifyDataset\TrainData", 'rb') as f:
+#with open(r"C:\content\drive\MyDrive\SpotifyDataset\TrainData\ex.csv", 'rb') as f:
     # Process the file contents using f here
     # For example:
-    music_dict = pickle.load(f)
+#   music_dict = pickle.load(f)
+import os
+
+data_dir = r"C:\content\drive\MyDrive\SpotifyDataset\TrainData\ex.csv"
+files = os.listdir(data_dir)
+
+# Do something with the list of files (e.g., print them)
+for filename in files:
+    print(filename)
 
 
 # Fetch poster for a given music title
